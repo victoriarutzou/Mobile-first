@@ -1,0 +1,135 @@
+
+/*NOTER TIL MOBILE FIRST*/
+/* Lav IKKE din egen font eller rediger i det der står under sektionen Fonts her i kodningen*/
+/* Vi laver det origninale design til mobil-størrelse (600px og ned), og så bruger vi media queries til større devices*/
+
+/*Fonts*/
+h1{font-family: Arial, Helvetica, sans-serif;}
+h2{font-family: Arial, Helvetica, sans-serif;}
+h3 {font-family: Arial, Helvetica, sans-serif;}
+h4{font-family: Arial, Helvetica, sans-serif;}
+h5{font-family: Arial, Helvetica, sans-serif;}
+h6{font-family: Arial, Helvetica, sans-serif;}
+p{font-family: 'Libre Baskerville', serif;}
+
+/*Font til kridtavler*/
+/*Når du ønsker at bruge Pangolin-fonten, som er den vi bruger til kridtavler, så giv teksten en class, der hedder "chalk"*/
+.chalk {font-family: 'Pangolin';}
+
+/* Når du ønsker at noget tekst er med tyk skrift, så giv den en class, der hedder "bold"*/
+.bold {font-weight: 900;}
+
+/*Når du ønsker at noget tekst står med kursiv, så giv den en class, der hedder "italic"*/
+.italic {font-style: italic;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+
+/*FORSIDE*/
+
+/*MENUKORT-SIDEN*/
+
+/*OM OS-SIDEN*/
+
+/*FOOTER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/*SKAL stå nederst i CSS dokumentet*/
+
+/* Extra small devices (phones, 600px and down). Dette er vores originale design*/
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /*HEADER*/
+
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /*HEADER*/
+
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /*HEADER*/
+
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /*HEADER*/
+
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+}
