@@ -1,0 +1,233 @@
+/*NOTER TIL MOBILE FIRST*/
+/* Lav IKKE din egen font eller rediger i det der står under sektionen Fonts her i kodningen*/
+/* Vi laver det origninale design til mobil-størrelse (600px og ned), og så bruger vi media queries til større devices*/
+
+/*Fonts*/
+h1{font-family: Arial, Helvetica, sans-serif;
+font-size: 4vw; text-align: center;}
+h2{font-family: Arial, Helvetica, sans-serif;}
+h3 {font-family: Arial, Helvetica, sans-serif; font-size: 1.5vw;}
+a, h4{font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; color:black; font-size: 2vw; text-align: center;}
+h5{font-family: Arial, Helvetica, sans-serif;}
+h6{font-family: Arial, Helvetica, sans-serif;}
+p{font-family: 'Libre Baskerville', serif; }
+
+/*Font til kridtavler*/
+/*Når du ønsker at bruge Pangolin-fonten, som er den vi bruger til kridtavler, så giv teksten en class, der hedder "chalk"*/
+.chalk {font-family: 'Pangolin';
+        color: white}
+
+/* Når du ønsker at noget tekst er med tyk skrift, så giv den en class, der hedder "bold"*/
+.bold {font-weight: 900;}
+
+/*Når du ønsker at noget tekst står med kursiv, så giv den en class, der hedder "italic"*/
+.italic {font-style: italic;}
+
+
+
+/*HEADER*/
+
+/*FORSIDE*/
+
+
+/* MENUKORTSIDE*/
+#dishes a {
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: #a37660; 
+    text-decoration: none;
+}
+
+#dishes a:hover { 
+    background-color: #e4ae94; 
+}
+
+#dishes{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Kridttavlen*/
+
+#Mbrødtext{
+    background-image: url(photos-mobile/chalkboard.jpg);
+    border-radius: 10px;
+    
+}
+
+#chalk{
+    text-align: center;
+    letter-spacing: 1pt;
+}
+
+.mliste{
+    display: flex;
+}
+
+.mknap {
+    background-image: url(photos-mobile/Knap.png);
+    height: 70px;
+    width: 200px;
+    background-repeat: no-repeat;
+    padding-top: 22px;  
+    
+}
+
+#mcta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+
+/*OM OS-SIDEN*/
+
+/*FOOTER*/
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/*SKAL stå nederst i CSS dokumentet*/
+
+/* Extra small devices (phones, 600px and down). Dette er vores originale design*/
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    /*HEADER*/
+
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+    #dishes{
+    flex-direction: row;
+    }
+
+    #mcta{
+        flex-direction: column;
+
+    }
+        
+    p{
+        font-size: 3vw
+    }
+        
+    #dishes a {
+        width: 100px;
+        height: 40px;
+    }
+        
+    a h3{
+        font-size: 3vw;
+    }
+
+    
+    .relative{
+        width: 150px;
+        height: 100px;
+        position: relative;
+        left: 160px;
+    }
+
+    .mvin{
+        background-image: url(photos-mobile/vin.png);
+        width: 200px;
+        margin-left: 60px;
+        margin-top: 100px;
+    }
+
+    .padding1 {
+        padding-top: 20px;
+    }
+    
+    .padding2{
+        padding-left: 50px;
+    }
+    
+    #mvin{
+       
+        width: 200px;
+        height: 250px;
+        
+        
+    }
+
+        
+        
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 600px) {
+    /*HEADER*/
+
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+        
+
+    #dishes{
+        flex-direction: row;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+        
+    #dishes a {
+        width: 240px;
+        height: 40px;
+    }
+
+    
+    #cta{
+        flex-direction: row;
+        margin-left: 450px;
+    }
+        
+    a h3{
+        font-size: 1.5vw;
+    }
+
+    .ret, .priser{
+        margin-left: 100px;
+    }
+    
+    .ret1{
+        margin-left:200px ;
+    }
+        
+    p{
+        font-size: 1.5vw;
+    }
+   
+
+    .mvin{
+        width: 600px;
+        height: 600px;
+        margin-left: auto;
+        margin-top: 100px;
+        
+    }
+
+    .relative{
+        width: 280px;
+        height: 200px;
+        position: relative;
+        left: 620px;
+
+    }
+    
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+}
