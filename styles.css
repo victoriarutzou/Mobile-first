@@ -43,13 +43,135 @@ p{font-family: 'Libre Baskerville', serif;}
 /*HEADER*/
 
 /*FORSIDE*/
+/*studiemiljø*/
+#studiemiljø{
+    position: relative;
+}
+
+/*tekstboksen i billedet*/
+#studiemiljøtekst{
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    top: 5%;
+    bottom: 50%;
+    right: 5%;
+    background-color: white;
+    opacity: 75%;
+    padding: 10px 20px;
+    overflow: auto;
+}
+
+#studiemiljølaptop{
+    width: 100%;
+    height: auto;
+}
+#studiemiljømobile{
+    display: none;
+}
+
+/*events*/
+
+.f-grid-container {
+    display: table;
+    width: 100%;
+    background-image: url("photos.laptop/f-chalk.jpg");
+    margin-top: 10px;
+}
+.f-grid-container > div {
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+#f-mobile-events{
+    display: none;
+}
+/*de 'columns' der får elementerne til at opføre sig pænt*/
+[class*="col-"] {
+    float: left;
+    padding: 10px;}
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+/*Nye vine*/
+#f-nyevine{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#f-nyevine > div{
+    text-align: center;
+    width: 200px;
+}
+
+/*'Flere vine' Knap*/
+.f-button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.f-button{
+    background-image: url("photos.laptop/f-chalk.jpg");
+    color: white;
+    font-family: 'Pangolin';
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Vinsmagning*/
+#f-vinsmagning{
+    background-image: url("photos.laptop/fvinsmagning.png");
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#f-vin-tekstboks{
+    background-color: white;
+    opacity: 75%;
+    padding: 20px;
+    min-width: fit-content;
+}
 
 /*MENUKORT-SIDEN*/
 
 /*OM OS-SIDEN*/
 
 /*FOOTER*/
+footer{
+    color: white;
+    line-height: 20pt;
+    font-size: smaller;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 10px;
+}
 
+/*flexbox til footeren*/
+footer > .b-flex-container{
+    display: flex;
+    background-image: url("photos.laptop/woodfooter.png");
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
 
 
 
@@ -80,6 +202,70 @@ p{font-family: 'Libre Baskerville', serif;}
 
 /* Extra small devices (phones, 600px and down). Dette er vores originale design*/
 
+@media only screen and (max-width: 600px) {
+
+
+
+    /*HEADER*/
+
+
+
+    /*FORSIDE*/
+
+        .forsidemain{
+            font-size: 8pt;
+        }
+    
+        #studiemiljølaptop{
+            display: none;
+        }
+    
+        #studiemiljømobile{
+            display: flex;
+            width: 100%;
+        }
+    
+        #studiemiljøtekst{
+            top: 2%;
+            font-size: smaller;
+        }
+    
+        #f-nyevine{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #f-vinsmagning{
+            background-image: url("photos.mobile/fvinsmagning.png");
+            }
+    
+        #f-vin-tekstboks{
+            text-align: center;
+            padding: 5px;
+            }
+
+    /*MENUKORT-SIDEN*/
+
+
+
+    /*OM OS-SIDEN*/
+
+
+
+    /*FOOTER*/
+        footer > .b-flex-container{
+            flex-direction: column;
+            font-size: 8pt;
+        }
+        footer{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+}
+
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -87,6 +273,10 @@ p{font-family: 'Libre Baskerville', serif;}
     /*HEADER*/
 
     /*FORSIDE*/
+        #f-vin-tekstboks{
+            margin-right: 50%;
+            padding: 20px;
+        }
 
     /*MENUKORT-SIDEN*/
 
@@ -132,4 +322,24 @@ p{font-family: 'Libre Baskerville', serif;}
     /*OM OS-SIDEN*/
 
     /*FOOTER*/
+}
+
+/*Miras special MQ til 'events' sektion */
+@media only screen and (max-width: 992px){
+
+    #f-mobile-events{
+        background-image: url("photos.laptop/f-chalk.jpg");
+        padding: 10px;
+        display: block;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+    }
+    #f-mobile-events > div{
+        display: flex;
+        justify-content: center;
+    }
+    .f-grid-container{
+        display: none;
+    }
 }

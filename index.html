@@ -1,49 +1,147 @@
 <!DOCTYPE html>
+
 <html lang="da">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Forside</title>
+
     <!--Link til stylesheet-->
+
     <link rel="stylesheet" href="styles.css">
+
     <!--Google Fonts-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pangolin&display=swap" rel="stylesheet">
+
 </head>
 
-<!--NOTER TIL MOBILE FIRST-->
-<!--Lav overskrifter til de forskellige afsnit i din kode-->
-<!-- Husk ALT-tekst på ALLE billeder-->
-<!--lav to mapper til billeder. En mappe der hedder photos.mobile, hvor billeder til mobil-versionen gemmes, 
-    og en anden mappe der hedder photos.laptop, hvor billeder til laptop-versionene gemmes.-->
-
 <body>
-    <!--Test af skriftyper. Her kan du se de forskellige skriftyper-->
-        <h1>Her er h1</h1>
-        <h2>Her er h2</h2>
-        <h3>Her er h3</h3>
-        <h4>Her er h4</h4>
-        <h5>Her er h5</h5>
-        <h6>Her er h6</h6>
-        <p>Her er brødteksten, altså en paragraph</p>
+
+<!--Header-->
+
+<!--Main-->
+<main class="forsidemain">
+
+<!--studiemiljø-->    
+
+<div id="studiemiljø">
+    <img id="studiemiljølaptop" src="photos.laptop/fstudiemiljø.png" alt="en kop kaffe">
+    <img id="studiemiljømobile" src="photos.mobile/fstudiemiljø.png" alt="en kop kaffe">
+    <div id="studiemiljøtekst">
+        <h3>Løve's studiemiljø</h3>
+        <p> Hos Løve's bog- og vincafé tilbydes et suverænt studiemiljø med ro til selvstudie, plads til gruppearbejde og godt til ganen.
+        </p></div></div>
+<!--events-->
+
+    <!--mobile-->
+<section id="f-mobile-events">
+        <h2 class="chalk">Events </h2>
+        <p class="chalk">Løve's bogklub: 2. tirsdag hver måned, kl. 19.00</p>
+        <p class="chalk">Åben poetisk scene: 2. og 4. onsdag hver måned, kl. 19.30-21.30</p>
+        <p class="chalk">Y Århus Poetry Club: den 3. onsdag hver måned, kl 19.30</p>
+    <div><img src="photos.mobile/ftapebil.png" alt="poetisk aften"></div>
+    <div><img src="photos.mobile/ftapebil2.png" alt="poetisk aften"></div>
+</section>
+
+    <!--laptop-->
+<section id="f-laptop-events">
+<div class="f-grid-container">  
+    <div class="col-5">
+        <h2 class="chalk"> Events </h2>
+        <p class="chalk">Løve's bogklub: 2. tirsdag hver måned, kl. 19.00</p>
+        <p class="chalk">Åben poetisk scene: 2. og 4. onsdag hver måned, kl. 19.30-21.30</p>
+        <p class="chalk">Y Århus Poetry Club: den 3. onsdag hver måned, kl 19.30</p></div>
+
+    <div class="col-2"></div> 
+
+    <div class="col-4">
+        <img id="tapelaptop1" src="photos.laptop/ftapebil.png" alt="bogklubmøde"></div>
+
+    <div class="col-4">
+        <img  src="photos.laptop/fmusik.png" alt="musik"></div>  
+
+    <div class="col-4">
+        <img id="tapelaptop2" src="photos.laptop/ftapebil2.png" alt="bogklubmøde"></div>
+        
+    <div class="col-3">
+        <img  src="photos.laptop/fpoetiskaften.png" alt="poetisk aften"></div> 
+  </div></section>
+
+<!--nye vine-->
+
+<h2>Nye vine</h2>
+<div id="f-nyevine">
+<div><img src="photos.mobile/fvin1.png" alt="vin">
+    <p>Ostrea - Vernacchia di San Gimignano <br> 149 DKK</p>
+</div>
+<div><img src="photos.mobile/fvin2.png" alt="vin">
+    <p>Pinot Blanc de Noir <br> 239 DKK</p>
+</div>
+<div><img src="photos.mobile/fvin3.png" alt="vin">
+    <p>Baloiro Blanco <br> 125 DKK</p>
+</div>
+</div>
+
+<div class="f-button-container">
+    <div><a class="f-button" href="#">Flere vine</a></div></div>
+
+<!--vinsmagning-->
+
+<section id="f-vinsmagning">
+<div id="f-vin-tekstboks"><h2>Vinsmagning</h2>
+<p>Kom ned i Vincaféen og hold vinsmagning. Det er den perfekte anledning for et polterabend, en fødselsdag eller bare en god, gedigen fest. Hvis I blot finder anledningen og dagen, sørger vi for vinforedrag- og smagning. Smagningen koster 250 kr. pr. person (min. 8 personer) og varer 2-3 timer, hvor I bare skal læne jer tilbage og få en masse at vide om vin, mens I nyder 7-8 forskellige vine fra vores sortiment. I bestemmer selv et evt. tema for smagningen - det kunne være fransk smagning, Cabernet Sauvignon smagning, eller alt muligt andet, kun fantasien sætter grænser - og der er også mulighed for at få snacks under smagningen for 50 kr. ekstra pr. person.
+    <br><br>
+    Så hvis I er interesseret i at smage nogle vine, der ikke findes andre steder i landet, og samtidig få en masse ny og interessant viden om vin, skriver I bare en mail til vincafeen@loeves.dk med jeres ønsker.
+</p></div></section>
+
+</main>
 
 
 
-    <!--Header--->
-    <!--Lad være med at lave din egen Header. Lad personen i din gruppe, der står for headeren lave den, så den kan sættes ind senere.-->
-    <header>
-    </header>
+<!--Footer-->
+<footer>
+    <div class="b-flex-container">
+    <div><h2>Her finder du os</h2>
+    <p>Adresse:
+        <br> Nørregade 32, 8000 Århus C
+    </p>
+    <p>
+        Telefon: 27 83 16 33
+    </p>
+    <p>
+        Mail: aa-cafe@loeves.dk
+    </p></div>
 
-    <!--Main-->
-    <main id="forsidemain">
-    </main>
+    <div><h2>Åbningstider</h2>
+    <p>Man-Ons: 9-22
+    <br> Tor-Fre: 9-24
+    <br> Lør: 10-24
+    <br> Søn: 10-18
+    </p></div>
 
-    <!--Footer-->
-    <!--Lad være med at lave din egen Footer. Lad personen i din grupper, der står for footeren lave den, så den kan sættes ind senere-->
-    <footer>
-    </footer>
+    <div><h2>
+        Besøg os også på
+    </h2>
+    <a href="#"> <img src="photos.mobile/bfacebook.png" alt="facebook"></a>
+    <a href="#"> <img src="photos.mobile/binstagram.png" alt="instagram"></a>
+    <a href="#"> <img src="photos.mobile/btwitter.png" alt="twitter"></a>
+    </div>
+    </div>
+</footer>
+
     
+
 </body>
+
 </html>
