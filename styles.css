@@ -72,6 +72,11 @@ header {
     justify-content: space-around;
   }
 
+  .knapcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
 
 
@@ -188,8 +193,8 @@ header {
         background-image: url("photos.laptop/chalkboard.jpg");
         width: 85px;
         height: 46px;
-        
         }
+
     .dropdown-content {
         width: 85px;
         height: auto;
