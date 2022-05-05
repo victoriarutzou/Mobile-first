@@ -193,6 +193,7 @@ header {
 /*Vinsmagning*/
 #f-vinsmagning{
     background-image: url("photos.laptop/fvinsmagning.png");
+    background-repeat: no-repeat;
     padding: 20px;
     margin-top: 10px;
 }
