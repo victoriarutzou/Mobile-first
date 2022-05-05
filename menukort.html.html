@@ -20,19 +20,100 @@
     og en anden mappe der hedder photos.laptop, hvor billeder til laptop-versionene gemmes.-->
 
 <body>
-    <!--Test af skriftyper. Her kan du se de forskellige skriftyper-->
-        <h1>Her er h1</h1>
-        <h2>Her er h2</h2>
-        <h3>Her er h3</h3>
-        <h4>Her er h4</h4>
-        <h5>Her er h5</h5>
-        <h6>Her er h6</h6>
-        <p>Her er brødteksten, altså en paragraph</p>
-   
-    <!--Header-->
-    <!--Lad være med at lave din egen Header. Lad personen i din gruppe, der står for headeren lave den, så den kan sættes ind senere.-->
+    <!--Header-->    
     <header>
+
+        <!--Burger menu-->
+        <div class="dropdown">
+
+            <button id="burgermenu"> 
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Hjem</a>
+                <a href="menukort.html.html" class="chalk">Menukort</a>
+                <a href="#" class="chalk">Om os</a>
+                <a href="#" class="chalk">Køb</a>
+                <a href="#" class="chalk">Events</a>
+                <a href="#" class="chalk">Bestil Bord</a>
+            </div>
+        </div>
+
+        <!--Logo til laptop-->
+        <div id="laptoplogo">
+            <a href="index.html"><img  src="photos.laptop/logo.png"  alt=logo/></a> 
+        </div>
+        <!--Logo til tablet-->
+        <div id="tabletlogo">
+            <a href="index.html"><img  src="photos.middle/logo.png" alt=logo/></a> 
+        </div>
+        <!--Logo til mobil-->
+        <div id="mobilelogo">
+            <a href="index.html"><img src="photos.mobile/logo.png" alt=logo></a> 
+        </div>
+        <!--Dansk og engelsk flag-->
+        <div id="flag">
+            <a href="#"><img  src="photos.laptop/danskflag.png" alt=dansk/></a>
+            <a href="#"><img  src="photos.laptop/engelskflag.png" alt=engelsk/></a>
+        </div>
     </header>
+    
+
+
+    <!---Drop down menu til computer-->
+    <nav> 
+        <!--Hjem-->
+        <div class="btn knapcontainer">
+       <a class="chalk" href="index.html">Hjem</a>
+        </div>
+        <!--Menukort-->
+        <div class="btn knapcontainer">
+            <a class="chalk" href="#">Menukort</a>
+        </div>
+       
+
+      
+        <!--Om os-->
+        <div class="btn knapcontainer">
+            <a class="chalk" href="#">Om os</a>
+        </div>
+      
+        <!--Køb-->
+        <div class="dropdown">
+
+            <button class="btn chalk"> Køb
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Bøger</a>
+                <a href="#" class="chalk">Vin</a>
+                <a href="#" class="chalk">Gavekort</a>
+            </div>
+        </div>
+        <!--Events-->
+        <div class="dropdown">
+
+            <button class="btn chalk">Events
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Bogklub</a>
+                <a href="#" class="chalk">Poetry Club</a>
+                <a href="#" class="chalk">Andet</a>
+            </div>
+        </div>
+        <!--Bestil Bord-->
+        <div class="btn knapcontainer">
+            <a class="chalk" href="#">Bestil Bord</a>
+        </div>
+    </nav>
+
 
     <!--Main til menukort-->
     <main id="menumain">
