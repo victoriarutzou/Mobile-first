@@ -1,20 +1,22 @@
 
-/*XXXXXXXNOTER TIL MOBILE FIRST*/
-/* Lav IKKE din egen font eller rediger i det der står under sektionen Fonts her i kodningen*/
-/* Vi laver det origninale design til mobil-størrelse (600px og ned), og så bruger vi media queries til større devices*/
 
 /*Fonts*/
 h1{font-family: Arial, Helvetica, sans-serif;}
 h2{font-family: Arial, Helvetica, sans-serif;}
 h3 {font-family: Arial, Helvetica, sans-serif;}
-h4{font-family: Arial, Helvetica, sans-serif;}
+h4, 
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    }
 h5{font-family: Arial, Helvetica, sans-serif;}
 h6{font-family: Arial, Helvetica, sans-serif;}
 p{font-family: 'Libre Baskerville', serif;}
 
 /*Font til kridtavler*/
 /*Når du ønsker at bruge Pangolin-fonten, som er den vi bruger til kridtavler, så giv teksten en class, der hedder "chalk"*/
-.chalk {font-family: 'Pangolin';}
+.chalk {font-family: 'Pangolin';
+        color:white;}
 
 /* Når du ønsker at noget tekst er med tyk skrift, så giv den en class, der hedder "bold"*/
 .bold {font-weight: 900;}
@@ -25,6 +27,56 @@ p{font-family: 'Libre Baskerville', serif;}
 
 
 
+#laptoplogo, 
+#tabletlogo,
+nav {
+    display: none;
+}
+
+#burgermenu {
+    background-image: url("photos.mobile/burgermenu.png"); 
+    width: 41px;
+    height: 35px;
+    border-style: none;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+#mobilelogo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    opacity: 80%;
+    width: 200px;
+    height: 350px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .knapcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
 
 
@@ -40,7 +92,7 @@ p{font-family: 'Libre Baskerville', serif;}
 
 
 
-/*HEADER*/
+
 
 /*FORSIDE*/
 /*studiemiljø*/
@@ -269,8 +321,8 @@ footer > .b-flex-container{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
     /*HEADER*/
+    
 
     /*FORSIDE*/
         #f-vin-tekstboks{
@@ -288,7 +340,83 @@ footer > .b-flex-container{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     /*HEADER*/
+    #burgermenu,
+    #mobilelogo {
+        display: none;
+    }
 
+    #tabletlogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header{ /*gør at logo og flag står ved siden af hinanden*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+    
+    #flag { /*placere falgene øverst og ændre ikke placering*/
+        z-index: 100;
+        position: absolute;
+    }
+    
+    #logo { /*Placere logoet i midten*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*Drop down menu - COMPUTER*/
+    nav {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+       font-size: 14px; /*Skal ændres til vw i samme størrelse som h4*/
+        border: none;
+        background-image: url("photos.laptop/chalkboard.jpg");
+        width: 85px;
+        height: 46px;
+        }
+
+    .dropdown-content {
+        width: 85px;
+        height: auto;
+            }
+        
+
+
+
+    
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+} 
+
+/* (laptops/desktops, 800px and up) */
+@media only screen and (min-width: 850px) {
+    /*HEADER*/
+    
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 14px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 95px;
+        height: 46px;
+      }
+      .dropdown-content {
+        width: 95px;
+        }
+    
     /*FORSIDE*/
 
     /*MENUKORT-SIDEN*/
@@ -301,7 +429,17 @@ footer > .b-flex-container{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     /*HEADER*/
-
+    
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 14px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 110px;
+        height: 46px;
+      }
+      .dropdown-content {
+        width: 110px;
+        }
+    
     /*FORSIDE*/
 
     /*MENUKORT-SIDEN*/
@@ -311,10 +449,58 @@ footer > .b-flex-container{
     /*FOOTER*/
 } 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* BetweenLarge devices (laptops/desktops, 992px and up) and Extra large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1180px) {
     /*HEADER*/
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 14px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 130px;
+        height: 46px;
+      }
+      .dropdown-content {
+        width: 130px;
+        }
+}
+      
 
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+    /*HEADER*/
+    #tabletlogo {
+        display: none;
+    }
+
+    #laptoplogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 16px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 140px;
+        height: 46px;
+      }
+
+    .dropdown-content {
+        width: 140px;
+        }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+ /*HEADER*/
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 16px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 152px;
+        height: 46px;
+      }
+    .dropdown-content {
+    width: 152px;
+    }
     /*FORSIDE*/
 
     /*MENUKORT-SIDEN*/
