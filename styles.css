@@ -82,18 +82,54 @@ header {
       padding-bottom: 20px;
   }
 
+/* MENUKORTSIDE*/
+#dishes a {
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: #a37660; 
+    text-decoration: none;
+}
 
+#dishes a:hover { 
+    background-color: #e4ae94; 
+}
 
+#dishes{
+    display: flex;
+    justify-content: space-around;
+}
 
+/*Kridttavlen*/
 
+#Mbrødtext{
+    background-image: url(photos-mobile/chalkboard.jpg);
+    border-radius: 10px;
+    
+}
 
+#chalk{
+    text-align: center;
+    letter-spacing: 1pt;
+}
 
+.mliste{
+    display: flex;
+}
 
+.mknap {
+    background-image: url(photos-mobile/Knap.png);
+    height: 70px;
+    width: 200px;
+    background-repeat: no-repeat;
+    padding-top: 22px;  
+    
+}
 
-
-
-
-
+#mcta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
 
 
 
@@ -300,7 +336,58 @@ footer > .b-flex-container{
             }
 
     /*MENUKORT-SIDEN*/
-
+    #dishes{
+        flex-direction: row;
+        }
+    
+        #mcta{
+            flex-direction: column;
+    
+        }
+            
+        p{
+            font-size: 3vw
+        }
+            
+        #dishes a {
+            width: 100px;
+            height: 40px;
+        }
+            
+        a h3{
+            font-size: 3vw;
+        }
+    
+        
+        .relative{
+            width: 150px;
+            height: 100px;
+            position: relative;
+            left: 160px;
+        }
+    
+        .mvin{
+            background-image: url(photos-mobile/vin.png);
+            width: 200px;
+            margin-left: 60px;
+            margin-top: 100px;
+        }
+    
+        .padding1 {
+            padding-top: 20px;
+        }
+        
+        .padding2{
+            padding-left: 50px;
+        }
+        
+        #mvin{
+           
+            width: 200px;
+            height: 250px;
+            
+            
+        }
 
 
     /*OM OS-SIDEN*/
@@ -331,6 +418,55 @@ footer > .b-flex-container{
         }
 
     /*MENUKORT-SIDEN*/
+    #dishes{
+        flex-direction: row;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+        
+    #dishes a {
+        width: 240px;
+        height: 40px;
+    }
+
+    
+    #cta{
+        flex-direction: row;
+        margin-left: 450px;
+    }
+        
+    a h3{
+        font-size: 1.5vw;
+    }
+
+    .ret, .priser{
+        margin-left: 100px;
+    }
+    
+    .ret1{
+        margin-left:200px ;
+    }
+        
+    p{
+        font-size: 1.5vw;
+    }
+   
+
+    .mvin{
+        width: 600px;
+        height: 600px;
+        margin-left: auto;
+        margin-top: 100px;
+        
+    }
+
+    .relative{
+        width: 280px;
+        height: 200px;
+        position: relative;
+        left: 620px;
+
+    }
 
     /*OM OS-SIDEN*/
 
