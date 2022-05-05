@@ -10,31 +10,95 @@
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pangolin&display=swap" rel="stylesheet"> 
 </head>
 
-<!--NOTER TIL MOBILE FIRST-->
-<!--Lav overskrifter til de forskellige afsnit i din kode-->
-<!-- Husk ALT-tekst på ALLE billeder-->
-<!--lav to mapper til billeder. En mappe der hedder photos.mobile, hvor billeder til mobil-versionen gemmes, 
-    og en anden mappe der hedder photos.laptop, hvor billeder til laptop-versionene gemmes.-->
 
 <body>
-    <!--Test af skriftyper. Her kan du se de forskellige skriftyper-->
-        <h1>Her er h1</h1>
-        <h2>Her er h2</h2>
-        <h3>Her er h3</h3>
-        <h4>Her er h4</h4>
-        <h5>Her er h5</h5>
-        <h6>Her er h6</h6>
-        <p>Her er brødteksten, altså en paragraph</p>
-
-
-
-    <!--Header--->
-    <!--Lad være med at lave din egen Header. Lad personen i din gruppe, der står for headeren lave den, så den kan sættes ind senere.-->
+ <!--Header--->    
     <header>
+
+        <!--Burger menu-->
+        <div class="dropdown">
+
+            <button id="burgermenu"> 
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Hjem</a>
+                <a href="#" class="chalk">Menukort</a>
+                <a href="#" class="chalk">Om os</a>
+                <a href="#" class="chalk">Køb</a>
+                <a href="#" class="chalk">Events</a>
+                <a href="#" class="chalk">Bestil Bord</a>
+            </div>
+        </div>
+
+        <!--Logo til laptop-->
+        <div id="laptoplogo">
+            <a href="index.html"><img  src="photos.laptop/logo.png"  alt=logo/></a> 
+        </div>
+        <!--Logo til tablet-->
+        <div id="tabletlogo">
+            <a href="index.html"><img  src="photos.middle/logo.png" alt=logo/></a> 
+        </div>
+        <!--Logo til mobil-->
+        <div id="mobilelogo">
+            <a href="index.html"><img src="photos.mobile/logo.png" alt=logo></a> 
+        </div>
+        <!--Dansk og engelsk flag-->
+        <div id="flag">
+            <a href="#"><img  src="photos.laptop/danskflag.png" alt=dansk/></a>
+            <a href="#"><img  src="photos.laptop/engelskflag.png" alt=engelsk/></a>
+        </div>
     </header>
+    
+
+
+    <!---Drop down menu til computer-->
+    <nav> 
+        <!--Hjem-->
+        <button class="btn"><a href="index.html" class="chalk">Hjem</a></button>
+ 
+        <!--Menukort-->
+        <button class="btn"><a href="#" class="chalk">Menukort</a></button>
+        
+        <!--Om os-->
+        <button class="btn"><a href="#" class="chalk">Om os</a></button>
+        
+        <!--Køb-->
+        <div class="dropdown">
+
+            <button class="btn chalk"> Køb
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Bøger</a>
+                <a href="#" class="chalk">Vin</a>
+                <a href="#" class="chalk">Gavekort</a>
+            </div>
+        </div>
+        <!--Events-->
+        <div class="dropdown">
+
+            <button class="btn chalk">Events
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Bogklub</a>
+                <a href="#" class="chalk">Poetry Club</a>
+                <a href="#" class="chalk">Andet</a>
+            </div>
+        </div>
+        <!--Bestil Bord-->
+        <button class="btn"><a href="#" class="chalk">Bestil Bord</a></button>
+    </nav>
 
     <!--Main-->
     <main id="forsidemain">
