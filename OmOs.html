@@ -26,52 +26,101 @@
 
 </head>
 
-
-
-<!--NOTER TIL MOBILE FIRST-->
-
-<!--Lav overskrifter til de forskellige afsnit i din kode-->
-
-<!-- Husk ALT-tekst på ALLE billeder-->
-
-<!--lav to mapper til billeder. En mappe der hedder photos.mobile, hvor billeder til mobil-versionen gemmes, 
-
-    og en anden mappe der hedder photos.laptop, hvor billeder til laptop-versionene gemmes.-->
-
-
-
 <body>
 
-    <!--Test af skriftyper. Her kan du se de forskellige skriftyper-->
-
-        <h1>Her er h1</h1>
-
-        <h2>Her er h2</h2>
-
-        <h3>Her er h3</h3>
-
-        <h4>Her er h4</h4>
-
-        <h5>Her er h5</h5>
-
-        <h6>Her er h6</h6>
-
-        <p>Her er brødteksten, altså en paragraph</p>
-
-
-
-
-
-
-
-    <!--Header-->
-
-    <!--Lad være med at lave din egen Header. Lad personen i din gruppe, der står for headeren lave den, så den kan sættes ind senere.-->
-
+    <!--Header-->    
     <header>
 
-    </header>
+        <!--Burger menu-->
+        <div class="dropdown">
 
+            <button id="burgermenu"> 
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Hjem</a>
+                <a href="menukort.html.html" class="chalk">Menukort</a>
+                <a href="#" class="chalk">Om os</a>
+                <a href="#" class="chalk">Køb</a>
+                <a href="#" class="chalk">Events</a>
+                <a href="#" class="chalk">Bestil Bord</a>
+            </div>
+        </div>
+
+        <!--Logo til laptop-->
+        <div id="laptoplogo">
+            <a href="index.html"><img  src="photos.laptop/logo.png"  alt=logo/></a> 
+        </div>
+        <!--Logo til tablet-->
+        <div id="tabletlogo">
+            <a href="index.html"><img  src="photos.middle/logo.png" alt=logo/></a> 
+        </div>
+        <!--Logo til mobil-->
+        <div id="mobilelogo">
+            <a href="index.html"><img src="photos.mobile/logo.png" alt=logo></a> 
+        </div>
+        <!--Dansk og engelsk flag-->
+        <div id="flag">
+            <a href="#"><img  src="photos.laptop/danskflag.png" alt=dansk/></a>
+            <a href="#"><img  src="photos.laptop/engelskflag.png" alt=engelsk/></a>
+        </div>
+    </header>
+    
+
+
+    <!---Drop down menu til computer-->
+    <nav> 
+        <!--Hjem-->
+        <div class="btn knapcontainer">
+       <a class="chalk" href="index.html">Hjem</a>
+        </div>
+        <!--Menukort-->
+        <div class="btn knapcontainer">
+            <a class="chalk" href="#">Menukort</a>
+        </div>
+       
+
+      
+        <!--Om os-->
+        <div class="btn knapcontainer">
+            <a class="chalk" href="#">Om os</a>
+        </div>
+      
+        <!--Køb-->
+        <div class="dropdown">
+
+            <button class="btn chalk"> Køb
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Bøger</a>
+                <a href="#" class="chalk">Vin</a>
+                <a href="#" class="chalk">Gavekort</a>
+            </div>
+        </div>
+        <!--Events-->
+        <div class="dropdown">
+
+            <button class="btn chalk">Events
+                <i class="fa fa-caret-down"></i>
+            </button> 
+
+
+            <div class="dropdown-content">
+                <a href="#" class="chalk">Bogklub</a>
+                <a href="#" class="chalk">Poetry Club</a>
+                <a href="#" class="chalk">Andet</a>
+            </div>
+        </div>
+        <!--Bestil Bord-->
+        <div class="btn knapcontainer">
+            <a class="chalk" href="#">Bestil Bord</a>
+        </div>
+    </nav>
 
 
     <!--Main-->
@@ -139,7 +188,7 @@
     <img src="photos.mobile/pil-hojre.jpg" alt="højre" class="pil">
 </div>
 
- <button type="button" class="obestil">Skriv andmedelse</button>
+ <button type="button" class="obestil">Skriv en anmeldelse</button>
  <!--historia, om os-->
 <section>
     <div id="ohistoria-container">
@@ -152,13 +201,19 @@
 </section>
 <section>
     <div class="container-bog">
-        <img src="photos.laptop/bookLaptop2.jpg" alt="hvidbog" class="responsivebog2">
-        
+        <img src="photos.laptop/bookLaptop2.jpg" alt="hvidbog" class="responsivebog2"/>
+
+    
             <div class="text-block">
                  <div class="love-text"><h2>Historien</h2><p>Historien bag Løve's Bogcafé går tilbage til en kold vinterdag i Aarhus i slutningen af 2004, hvor idéen om en bogcafé for første gang dukkede op i hovedet på grundlæggeren.<br><br>
                     Eller det vil sige, den helt rigtige historie går faktisk endnu længere tilbage, mere præcist til Svendborg i slutningen af firserne, hvor bogen Brødrene Løvehjerte for første gang blev læst op for to lyttende drenge, hvoraf den ene tyve år senere fik muligheden for at føre sin drøm ud i virkeligheden.<br><br>
                     En drøm, der blev formet af en lille, blond drengs skikkelse, som var et billede skabt af en svensk forfatterindes fantastiske fantasi. Et billede på en løves mod og et hjertes kærlighed. Drengen hed Jonatan Løve, og i hans billede er Løve's Bogcafé skabt.</p></div>
             </div>
+
+            <div class="text-block2">
+                <div class="love-text2"><h2>Bogen der inspirerede cafeens grundlægger</h2><p>Ideen bag Løve's Bogcafé kommer fra en kold vinterdag i Aarhus i slutningen af 2004, hvor cafeens grundlægger sad og læste brødrene Løvehjerte.<br><br></div>
+            </div>
+
     </div>
 
 </section>
@@ -174,13 +229,40 @@
 
 
 
-    <!--Footer-->
+    
 
-    <!--Lad være med at lave din egen Footer. Lad personen i din grupper, der står for footeren lave den, så den kan sættes ind senere-->
+<!--Footer-->
+<footer>
+    <div class="b-flex-container">
+    <div><h2>Her finder du os</h2>
+    <p>Adresse:
+        <br> Nørregade 32, 8000 Århus C
+    </p>
+    <p>
+        Telefon: 27 83 16 33
+    </p>
+    <p>
+        Mail: aa-cafe@loeves.dk
+    </p></div>
 
-    <footer>
 
-    </footer>
+    <div><h2>Åbningstider</h2>
+    <p>Man-Ons: 9-22
+    <br> Tor-Fre: 9-24
+    <br> Lør: 10-24
+    <br> Søn: 10-18
+    </p></div>
+
+    <div><h2>
+        Besøg os også på
+    </h2>
+    <a href="#"> <img src="photos.mobile/bfacebook.png" alt="facebook"></a>
+    <a href="#"> <img src="photos.mobile/binstagram.png" alt="instagram"></a>
+    <a href="#"> <img src="photos.mobile/btwitter.png" alt="twitter"></a>
+    </div>
+    </div>
+</footer>
+
 
     
 

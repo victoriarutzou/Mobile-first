@@ -16,13 +16,18 @@ h2,.obestil{font-family: Arial, Helvetica, sans-serif;}
 
 h3 {font-family: Arial, Helvetica, sans-serif;}
 
-h4 {font-family: Arial, Helvetica, sans-serif;}
+h4, 
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    }
 
 h5{font-family: Arial, Helvetica, sans-serif;}
 
 h6{font-family: Arial, Helvetica, sans-serif;}
 
-p{font-family: 'Libre Baskerville', serif;}
+p{font-family: 'Libre Baskerville', serif;
+font-size: 16px;}
 
 
 
@@ -44,48 +49,63 @@ p{font-family: 'Libre Baskerville', serif;}
 /*Når du ønsker at noget tekst står med kursiv, så giv den en class, der hedder "italic"*/
 
 .italic {font-style: italic;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*HEADER*/
 
+
+#laptoplogo, 
+#tabletlogo,
+nav {
+    display: none;
+}
+
+#burgermenu {
+    background-image: url("photos.mobile/burgermenu.png"); 
+    width: 41px;
+    height: 35px;
+    border-style: none;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+#mobilelogo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    opacity: 80%;
+    width: 200px;
+    height: 350px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .knapcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  nav {
+      padding-bottom: 20px;
+}
 
 
 /*FORSIDE*/
@@ -97,6 +117,7 @@ p{font-family: 'Libre Baskerville', serif;}
 
 
 /*OM OS-SIDEN*/
+
 .omosmain{
     text-align: center; 
     
@@ -184,16 +205,18 @@ p{font-family: 'Libre Baskerville', serif;}
     
   }
   
-  .text-block {
+  .text-block,
+  .text-block2 {
     position: absolute;
     padding-left: 20px;
     padding-right: 20px;
     height: 10px;
   
   }
-  .love-text {
+  .love-text,
+  .love-text2 {
     text-align: center;
-    max-width: 400px;
+    max-width: 500px;
     padding-top: 40px;
     padding-left: 40px;
     margin-right: 500px;
@@ -218,10 +241,24 @@ p{font-family: 'Libre Baskerville', serif;}
 
 
 
-
-
 /*FOOTER*/
+footer{
+    color: white;
+    line-height: 20pt;
+    font-size: smaller;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    margin-top: 10px;
+}
 
+/*flexbox til footeren*/
+footer > .b-flex-container{
+    display: flex;
+    background-image: url("photos.laptop/woodfooter.png");
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
 
 
 
@@ -277,9 +314,14 @@ p{font-family: 'Libre Baskerville', serif;}
         flex-direction: column;
     }
     
-    } 
+    
+    
     /*FOOTER*/
-
+    footer > .b-flex-container{
+    flex-direction: column;
+    font-size: 8pt;
+    }
+}
 
     /* Small devices (portrait tablets and large phones, 1000px and up) */
     
@@ -345,6 +387,104 @@ p{font-family: 'Libre Baskerville', serif;}
 
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /*HEADER*/
+    #burgermenu,
+    #mobilelogo {
+        display: none;
+    }
+
+    #tabletlogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header{ /*gør at logo og flag står ved siden af hinanden*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+    }
+    
+    #flag { /*placere falgene øverst og ændre ikke placering*/
+        z-index: 100;
+        position: absolute;
+    }
+    
+    #logo { /*Placere logoet i midten*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*Drop down menu - COMPUTER*/
+    nav {
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+       font-size: 14px; 
+        border: none;
+        background-image: url("photos.laptop/chalkboard.jpg");
+        width: 85px;
+        height: 46px;
+        }
+
+    .dropdown-content {
+        width: 85px;
+        height: auto;
+            }
+        
+}
+
+
+
+/* (laptops/desktops, 800px and up) */
+@media only screen and (min-width: 850px) {
+    /*HEADER*/
+    
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 14px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 95px;
+        height: 46px;
+      }
+      .dropdown-content {
+        width: 95px;
+        }
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /*HEADER*/
+    
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 14px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 110px;
+        height: 46px;
+      }
+      .dropdown-content {
+        width: 110px;
+        }
+    
+    /*FORSIDE*/
+
+    /*MENUKORT-SIDEN*/
+
+    /*OM OS-SIDEN*/
+
+    /*FOOTER*/
+} 
+
  /* Small devices (portrait tablets and large phones, 1000px and up) */
     
       /*HEADER*/
@@ -361,10 +501,232 @@ p{font-family: 'Libre Baskerville', serif;}
 
     /*OM OS-SIDEN*/ 
 
+   
+
+  
 
     @media only screen and (min-width: 1000px){
     .pil {
         display: none;
         
     }
+
 }    
+
+/* BetweenLarge devices (laptops/desktops, 992px and up) and Extra large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1180px) {
+    /*HEADER*/
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 14px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 130px;
+        height: 46px;
+      }
+      .dropdown-content {
+        width: 130px;
+        }
+}
+     
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (min-width: 1280px) {
+    /*HEADER*/
+    #tabletlogo {
+        display: none;
+    }
+
+    #laptoplogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 16px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 140px;
+        height: 46px;
+      }
+
+    .dropdown-content {
+        width: 140px;
+        }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+ /*HEADER*/
+    .btn { /*Designet på Menu-knapperne*/
+        /*padding: 16px;*/
+        font-size: 16px; /*Skal ændres til vw i samme størrelse som h4*/
+        width: 152px;
+        height: 46px;
+      }
+    .dropdown-content {
+    width: 152px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 740px) {
+    .text-block2{
+        display: block;
+    }
+
+    .love-text2 > p {
+        display: none;
+    }
+
+    .love-text2 > h2{
+      font-size: 13px;  
+    }
+    .love-text{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .text-block2{
+        display: block;
+    }
+
+    .love-text2 > p {
+        display: block;
+        font-size: 11px;
+    }
+
+    .love-text2 > h2{
+      font-size: 14px;  
+    }
+
+    .text-block{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 795px) {
+    .text-block2{
+        display: block;
+    }
+
+    .love-text2 > p {
+        display: block;
+        font-size: 12px;
+    }
+
+    .love-text2 > h2{
+      font-size: 15px;  
+    }
+
+    .text-block{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 860px) {
+    .text-block2{
+        display: block;
+    }
+
+    .love-text2 > p {
+        display: block;
+        font-size: 14px;
+    }
+
+    .love-text2 > h2{
+      font-size: 18px;  
+    }
+
+    .text-block{
+        display:none;
+    }
+
+}
+
+@media only screen and (min-width: 920px) {
+    .text-block2{
+        display: block;
+    }
+
+    .love-text2 > p {
+        display: block;
+        font-size: 16px;
+    }
+
+    .love-text2 > h2{
+      font-size: 20px;  
+    }
+
+    .text-block{
+        display:none;
+    }
+
+}
+
+@media only screen and (min-width: 1055px) {
+    .text-block2{
+        display: none;
+    }
+    .text-block{
+        display:block;
+    }
+
+    .love-text > p {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .text-block2{
+        display: none;
+    }
+    .text-block{
+        display:block;
+    }
+
+    .love-text > p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .text-block2{
+        display: none;
+    }
+    .text-block{
+        display:block;
+    }
+
+    .love-text > p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 2090px) {
+    .text-block2{
+        display: none;
+    }
+    .text-block{
+        display:block;
+    }
+
+    .love-text > p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 2800px) {
+    .text-block2{
+        display: none;
+    }
+    .text-block{
+        display:block;
+    }
+
+    .love-text > p {
+        font-size: 17px;
+    }
+}
+
