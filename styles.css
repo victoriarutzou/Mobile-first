@@ -110,6 +110,34 @@ header {
     display: none;
 }
 
+/*billedgalleri*/
+
+.f-billedgalleri-laptop{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.f-billedgalleri-laptop > div{
+    padding: 2px;
+    overflow: hidden;
+}
+
+.f-billedgalleri-mobile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.f-billedgalleri-mobile > div > img{
+    width: 100%;
+    height: auto;
+}
+
+
 /*events*/
 
 .f-grid-container {
@@ -302,6 +330,10 @@ footer > .b-flex-container{
             top: 2%;
             font-size: smaller;
         }
+
+        .f-billedgalleri-laptop{
+            display: none;
+        }
     
         #f-nyevine{
             flex-direction: column;
@@ -394,6 +426,11 @@ footer > .b-flex-container{
     
 
     /*FORSIDE*/
+    .f-billedgalleri-mobile{
+        display: none;
+    }
+    
+
     #f-vin-tekstboks{
         margin-right: 50%;
         padding: 20px;
