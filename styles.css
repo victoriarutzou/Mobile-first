@@ -82,12 +82,16 @@ header {
       padding-bottom: 20px;
   }
 
+
+
 /* MENUKORTSIDE*/
 #dishes a {
     padding-bottom: 15px;
     border-radius: 10px;
     background-color: #a37660; 
     text-decoration: none;
+    color: #000000;
+    text-align: center;
 }
 
 #dishes a:hover { 
@@ -99,7 +103,7 @@ header {
     justify-content: space-around;
 }
 
-/*Kridttavlen*/
+/*Kridttavlen i menun siden*/
 
 #Mbrødtext{
     background-image: url(photos-mobile/chalkboard.jpg);
