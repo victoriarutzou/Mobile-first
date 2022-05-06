@@ -231,12 +231,14 @@ header {
 /*vision og mission*/
 .vision-container {
     display: flex;
-    margin-right: 130px;
-    width: 1000px;
+    justify-content: space-evenly;
+    gap: 40px;
     }
 .vision-container > div{ 
-    width: 500px;
-    padding: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+
 }
 
 
@@ -310,9 +312,7 @@ footer > .b-flex-container{
     .container-bog{
         display: none;
     }
-    .vision-container{
-        flex-direction: column;
-    }
+    
     
     
     
@@ -585,6 +585,13 @@ footer > .b-flex-container{
     .love-text{
         display:none;
     }
+    
+    
+}
+@media only screen and (max-width: 1000px) {
+.vision-container{
+        flex-direction: column;
+    }    
 }
 
 @media only screen and (min-width: 740px) {
