@@ -1,0 +1,370 @@
+
+
+/*NOTER TIL MOBILE FIRST*/
+
+/* Lav IKKE din egen font eller rediger i det der står under sektionen Fonts her i kodningen*/
+
+/* Vi laver det origninale design til mobil-størrelse (600px og ned), og så bruger vi media queries til større devices*/
+
+
+
+/*Fonts*/
+
+h1{font-family: Arial, Helvetica, sans-serif;}
+
+h2,.obestil{font-family: Arial, Helvetica, sans-serif;}
+
+h3 {font-family: Arial, Helvetica, sans-serif;}
+
+h4 {font-family: Arial, Helvetica, sans-serif;}
+
+h5{font-family: Arial, Helvetica, sans-serif;}
+
+h6{font-family: Arial, Helvetica, sans-serif;}
+
+p{font-family: 'Libre Baskerville', serif;}
+
+
+
+/*Font til kridtavler*/
+
+/*Når du ønsker at bruge Pangolin-fonten, som er den vi bruger til kridtavler, så giv teksten en class, der hedder "chalk"*/
+
+.chalk {font-family: 'Pangolin';
+        color:white}
+
+
+
+/* Når du ønsker at noget tekst er med tyk skrift, så giv den en class, der hedder "bold"*/
+
+.bold {font-weight: 900;}
+
+
+
+/*Når du ønsker at noget tekst står med kursiv, så giv den en class, der hedder "italic"*/
+
+.italic {font-style: italic;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER*/
+
+
+
+/*FORSIDE*/
+
+
+
+/*MENUKORT-SIDEN*/
+
+
+
+/*OM OS-SIDEN*/
+.omosmain{
+    text-align: center; 
+    
+}
+.responsivebog {
+    width: 100%;
+    height: auto;
+   
+}
+
+
+/*bestilknappen*/
+.obestil{
+    width: 120px;
+    height: 60px;
+    background-color: #377f7B;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+/*kridttavle*/
+#okridttavle{
+    background-image: url(photos.mobile/kridttalvla.omos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.kridtlaptop{
+    background-image: url(photos.laptop/chalkLaptop.jpg);
+    padding-top: 5px;
+    padding-bottom: 20px;
+    min-width: 300px;
+    
+}
+.kridtravla-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+/*link til de fire afdelninger*/
+#okridttavle > a{
+    text-decoration: none;
+    color: white;
+}
+.kridtravla-grid > div > a{
+    text-decoration: none;
+    color: white;
+}
+/*andmedelser*/
+.container-kunder {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.okunder,.okunder2 {
+    width: 200px; 
+}
+.pil {
+    width: 34px;
+    height: 34px;
+    padding-top: 100px;
+}
+/*historia-mobil*/
+#ohistoria-container{
+    display: flex;
+    flex-direction: column;
+    background-color:#edcbcc;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  
+}
+/*historia-laptop*/
+.container-bog {
+    position: relative;
+    font-family: Arial;
+    display: flex;
+    
+  }
+  
+  .text-block {
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10px;
+  
+  }
+  .love-text {
+    text-align: center;
+    max-width: 400px;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-right: 500px;
+  
+    
+  }
+.responsivebog2 { /*den blåhvide bog*/
+    width: 100%;
+    height: auto;
+  
+}
+/*vision og mission*/
+.vision-container {
+    display: flex;
+    margin-right: 130px;
+    width: 1000px;
+    }
+.vision-container > div{ 
+    width: 500px;
+    padding: 80px;
+}
+
+
+
+
+
+/*FOOTER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+/*SKAL stå nederst i CSS dokumentet*/
+
+
+
+/* Extra small devices (phones, 600px and down). Dette er vores originale design*/
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+
+
+     /*HEADER*/
+
+
+
+    /*FORSIDE*/
+
+
+
+    /*MENUKORT-SIDEN*/
+
+
+
+    /*OM OS-SIDEN*/ 
+    #okridttavle {
+        display: block;
+    }
+    .kridtlaptop {
+        display: none;
+    }
+    .container-bog{
+        display: none;
+    }
+    .vision-container{
+        flex-direction: column;
+    }
+    
+    } 
+    /*FOOTER*/
+
+
+    /* Small devices (portrait tablets and large phones, 1000px and up) */
+    
+      /*HEADER*/
+
+
+
+    /*FORSIDE*/
+
+
+
+    /*MENUKORT-SIDEN*/
+
+
+
+    /*OM OS-SIDEN*/ 
+    
+    @media only screen and (max-width: 1000px){
+    .okunder2{
+        display: none;}
+    
+    }
+
+
+    /*FOOTER*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 600px) {
+
+    /*HEADER*/
+
+
+
+    /*FORSIDE*/
+
+
+
+    /*MENUKORT-SIDEN*/
+
+
+
+    /*OM OS-SIDEN*/
+    .omosmain{
+        margin-right: 130px;
+        margin-left: 130px;
+    }
+    #okridttavle {
+        display: none;
+    }
+    #ohistoria-container{
+        display: none;
+    }
+    .vision-container
+    {
+        flex-direction: row;
+    }
+
+    
+    
+    
+    /*FOOTER*/
+
+}
+
+ /* Small devices (portrait tablets and large phones, 1000px and up) */
+    
+      /*HEADER*/
+
+
+
+    /*FORSIDE*/
+
+
+
+    /*MENUKORT-SIDEN*/
+
+
+
+    /*OM OS-SIDEN*/ 
+
+
+    @media only screen and (min-width: 1000px){
+    .pil {
+        display: none;
+        
+    }
+}    
