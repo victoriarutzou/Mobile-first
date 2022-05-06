@@ -1,7 +1,7 @@
 
 
 /*Fonts*/
-h1{font-family: Arial, Helvetica, sans-serif;}
+h1{font-family: Arial, Helvetica, sans-serif; text-align: center;}
 h2{font-family: Arial, Helvetica, sans-serif;}
 h3 {font-family: Arial, Helvetica, sans-serif;}
 h4, 
@@ -80,63 +80,7 @@ header {
 
   nav {
       padding-bottom: 20px;
-  }
-
-
-
-/* MENUKORTSIDE*/
-#dishes a {
-    padding-bottom: 15px;
-    border-radius: 10px;
-    background-color: #a37660; 
-    text-decoration: none;
-    color: #000000;
-    text-align: center;
 }
-
-#dishes a:hover { 
-    background-color: #e4ae94; 
-}
-
-#dishes{
-    display: flex;
-    justify-content: space-around;
-}
-
-/*Kridttavlen i menun siden*/
-
-#Mbrødtext{
-    background-image: url(photos-mobile/chalkboard.jpg);
-    border-radius: 10px;
-    
-}
-
-#chalk{
-    text-align: center;
-    letter-spacing: 1pt;
-}
-
-.mliste{
-    display: flex;
-}
-
-.mknap {
-    background-image: url(photos-mobile/Knap.png);
-    height: 70px;
-    width: 200px;
-    background-repeat: no-repeat;
-    padding-top: 22px;  
-    
-}
-
-#mcta {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
-
-
 
 /*FORSIDE*/
 /*studiemiljø*/
@@ -247,6 +191,58 @@ header {
 
 /*MENUKORT-SIDEN*/
 
+#dishes a {
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: #a37660; 
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+#dishes a:hover { 
+    background-color: #e4ae94; 
+}
+
+#dishes{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Kridttavlen*/
+
+#Mbrødtext{
+    background-image: url(photos-mobile/chalkboard.jpg);
+    border-radius: 10px;
+    
+}
+
+#chalk{
+    text-align: center;
+    letter-spacing: 1pt;
+}
+
+.mliste{
+    display: flex;
+}
+
+
+/*cta knapper nederst på siden*/
+.mknap {
+    background-image: url(photos-mobile/Knap.png);
+    height: 70px;
+    width: 200px;
+    background-repeat: no-repeat;
+    padding-top: 22px; 
+    
+}
+#mcta {
+    display: flex;
+}
+.center{
+    text-align: center;
+}
+
 /*OM OS-SIDEN*/
 
 /*FOOTER*/
@@ -267,24 +263,6 @@ footer > .b-flex-container{
     flex-direction: row;
     width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -346,6 +324,7 @@ footer > .b-flex-container{
     
         #mcta{
             flex-direction: column;
+            align-items: center;
     
         }
             
@@ -388,11 +367,10 @@ footer > .b-flex-container{
         #mvin{
            
             width: 200px;
-            height: 250px;
-            
-            
+            height: 250px;   
         }
-
+        
+        
 
     /*OM OS-SIDEN*/
 
@@ -416,10 +394,10 @@ footer > .b-flex-container{
     
 
     /*FORSIDE*/
-        #f-vin-tekstboks{
-            margin-right: 50%;
-            padding: 20px;
-        }
+    #f-vin-tekstboks{
+        margin-right: 50%;
+        padding: 20px;
+    }
 
     /*MENUKORT-SIDEN*/
     #dishes{
@@ -434,9 +412,10 @@ footer > .b-flex-container{
     }
 
     
-    #cta{
+    #mcta{
         flex-direction: row;
         margin-left: 450px;
+        align-items: center;
     }
         
     a h3{
@@ -472,9 +451,6 @@ footer > .b-flex-container{
 
     }
 
-    /*OM OS-SIDEN*/
-
-    /*FOOTER*/
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
